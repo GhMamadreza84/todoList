@@ -16,7 +16,6 @@ function todoAdd(e) {
   todoDiv.classList.add("todo");
   const newTodo = ` <li>${todoInput.value}</li>
   <span><i class="fa fa-check-square"></i></span>
-  <span> <i class="fa fa-edit"></i></span>
   <span></i> <i class="fa fa-trash"></i></span>`;
   todoDiv.innerHTML = newTodo;
   todoList.appendChild(todoDiv);
@@ -76,7 +75,6 @@ function getLocalTodos() {
     todoDiv.classList.add("todo");
     const newTodo = ` <li>${todo}</li>
   <span><i class="fa fa-check-square"></i></span>
-  <span> <i class="fa fa-edit"></i></span>
   <span></i> <i class="fa fa-trash"></i></span>`;
     todoDiv.innerHTML = newTodo;
     todoList.appendChild(todoDiv);

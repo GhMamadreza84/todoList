@@ -39,7 +39,7 @@ form input,form button{
     border: none;
     outline: none;
     background-color: var(--mainWhite);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
 }
 form input{
@@ -49,7 +49,7 @@ form input{
     display: flex;
 }
 form{
-    width: 25rem;
+    width: 30rem;
     display: flex;
     background-color: white;
     justify-content: space-between;
@@ -73,9 +73,10 @@ form button:hover{
     border-radius: 5px;
     margin-left: 10px;
     color: var(--primaryColor);
+    font-size: 1.5rem;
 }
 .todo-container{
-    width: 25rem;
+    width: 30rem;
 }
 .todo{
     display: flex;
@@ -92,7 +93,7 @@ form button:hover{
     display: block;
     margin:  0 1rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .fa-trash{
     color: var(--mainRed);
@@ -100,4 +101,38 @@ form button:hover{
 .complated{
     text-decoration: line-through;
     opacity: 0.5;
+}
+@media only screen and (max-width: 768px){
+    .filter-todos{
+        background-color: var(--mainWhite);
+        border: 0;
+        outline: 0;
+        padding: 0.6rem;
+        border-radius: 5px;
+        margin-left: 1rem;
+        color: var(--primaryColor);
+        font-size: 0.8rem;
+    }
+    .todo span{
+        display: block;
+        margin:  0 1rem;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+    .todo-container{
+        width: 15.5rem;
+    }
+    form{
+        width: 15.5rem;
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+    }
+    form input,form button{
+        border: none;
+        outline: none;
+        background-color: var(--mainWhite);
+        font-size: 0.8rem;
+        padding: 0.9rem;
+    }
 }
