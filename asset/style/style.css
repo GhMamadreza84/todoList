@@ -103,11 +103,14 @@ form button:hover{
     opacity: 0.5;
 }
 @media only screen and (max-width: 768px){
+    body{
+        margin: 5rem;
+    }
     .filter-todos{
         background-color: var(--mainWhite);
         border: 0;
         outline: 0;
-        padding: 0.6rem;
+        padding: 0.9rem;
         border-radius: 5px;
         margin-left: 1rem;
         color: var(--primaryColor);
